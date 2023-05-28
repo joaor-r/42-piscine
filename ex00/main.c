@@ -5,14 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ceduard3 <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/28 15:15:39 by ceduard3          #+#    #+#             */
-/*   Updated: 2023/05/28 15:16:31 by ceduard3         ###   ########.fr       */
+/*   Created: 2023/05/28 16:24:25 by ceduard3          #+#    #+#             */
+/*   Updated: 2023/05/28 16:30:43 by ceduard3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void rush(int x, int y);
+void	rush(int x, int y);
 
-int main(){
-      rush(5,3);
-      return 0;
-} 
+int	main(void)
+{
+	rush(5, 3);
+	return (0);
+}

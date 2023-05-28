@@ -5,12 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ceduard3 <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/27 14:06:30 by ceduard3          #+#    #+#             */
-/*   Updated: 2023/05/27 14:06:38 by ceduard3         ###   ########.fr       */
+/*   Created: 2023/05/28 16:25:21 by ceduard3          #+#    #+#             */
+/*   Updated: 2023/05/28 16:25:23 by ceduard3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+void	ft_putchar(char c);
 
 void	ft_putchar(char c)
 {
