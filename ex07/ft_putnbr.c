@@ -1,42 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jovitor2 <jovitor2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/29 18:08:01 by jovitor2          #+#    #+#             */
-/*   Updated: 2023/05/30 15:26:51 by jovitor2         ###   ########.fr       */
+/*   Created: 2023/05/31 17:25:27 by jovitor2          #+#    #+#             */
+/*   Updated: 2023/05/31 17:25:55 by jovitor2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(int n)
+void	ft_putchar(char c)
 {
-	write (1, &n, 1);
+	write(1, &c, 1);
 }
 
-void	ft_print_comb2(void)
+void	ft_putnbr(int nb)
 {
-	int	n1;
-	int	n2;
-
-	n1 = -1;
-	while (n1++ < 98)
+	if (nb < 0)
 	{
-		n2 = n1;
-		while (n2++ < 99)
-		{
-			ft_putchar (n1 / 10 + 48);
-			ft_putchar (n1 % 10 + 48);
-			ft_putchar (' ');
-			ft_putchar (n2 / 10 + 48);
-			ft_putchar (n2 % 10 + 48);
-			if (n1 != 98)
-			{
-				write (1, ", ", 2);
-			}
-		}
+		ft_putchar('-');
+		nb = -nb;
 	}
+	if (nb == -2147483648)
+	{
+		ft_putchar(2 + 48);
+		nb = 147483648;
+	}
+	if (nb >= 10)
+	{
+		ft_putnbr(nb / 10);
+	}
+	ft_putchar(nb % 10 + 48);
 }
+/* int	main(void)
+{
+	ft_putnbr(42);
+}
+*/
