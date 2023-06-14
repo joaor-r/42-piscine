@@ -6,7 +6,7 @@
 /*   By: jovitor2 <jovitor2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 15:18:08 by jovitor2          #+#    #+#             */
-/*   Updated: 2023/06/13 20:27:20 by jovitor2         ###   ########.fr       */
+/*   Updated: 2023/06/14 13:42:41 by jovitor2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,11 @@
 
 int	main(int argc, char *argv[])
 {
-	(void) argc;
-	int i;
-
-	i = 0;
-	while (argv[0][i] != '\0')
+	argc = 0;
+	while (argv[0][argc] != '\0')
 	{
-		write(1, &argv[0][i], 1);
-		i++;
+		write(1, &argv[0][argc], 1);
+		argc++;
 	}
 	write(1, "\n", 1);
 	return (0);
